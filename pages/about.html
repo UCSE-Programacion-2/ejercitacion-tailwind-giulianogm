@@ -4,56 +4,56 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Sobre el curso</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a class="is-active" href="./about.html">Sobre el curso</a>
-          <a href="./faq.html">FAQ</a>
-          <a href="./privacy.html">Privacidad</a>
+  <body class="min-h-screen flex flex-col m-0 font-sans text-slate-800 bg-slate-100 leading-relaxed">
+    <header class="bg-slate-900 text-slate-200 border-b border-slate-800">
+      <div class="w-[92%] max-w-[1100px] mx-auto flex items-center justify-between py-4 gap-4">
+        <a class="text-slate-200 no-underline font-bold tracking-[0.3px]" href="../index.html">Tailwind Labs</a>
+        <nav class="flex gap-4 flex-wrap">
+          <a href="../index.html" class="text-slate-300 text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-md transition-colors duration-200 hover:text-cyan-400 hover:bg-white/5">Inicio</a>
+          <a href="./about.html" class="text-cyan-400 text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-md transition-colors duration-200 hover:text-cyan-400 hover:bg-white/5">Sobre el curso</a>
+          <a href="./faq.html" class="text-slate-300 text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-md transition-colors duration-200 hover:text-cyan-400 hover:bg-white/5">FAQ</a>
+          <a href="./privacy.html" class="text-slate-300 text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-md transition-colors duration-200 hover:text-cyan-400 hover:bg-white/5">Privacidad</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Sobre esta practica</h1>
-          <p>
+    <main class="flex-1">
+      <section class="w-[92%] max-w-[1100px] mx-auto py-9">
+        <div class="bg-white border border-slate-300 rounded-[0.9rem] shadow-[0_2px_8px_rgba(15,23,42,0.08)] p-6">
+          <h1 class="m-0 text-slate-900 text-[clamp(1.4rem,2.4vw,2rem)] font-bold">Sobre esta practica</h1>
+          <p class="text-slate-600 mt-[0.6rem]">
           Esta pagina entrena composicion con bloques, tipografia y grillas responsive.
           Deberias reutilizar patrones visuales del home para mantener consistencia.
           </p>
         </div>
 
-        <div id="stats-grid" class="stats-grid">
-          <article class="stat-card">
-            <p class="stat-label">Duracion sugerida</p>
-            <p class="stat-value">90 min</p>
+        <div id="stats-grid" class="mt-[1.4rem] grid gap-4 grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+          <article class="bg-white border border-slate-300 rounded-[0.9rem] shadow-[0_2px_8px_rgba(15,23,42,0.08)] p-4">
+            <p class="m-0 text-slate-500 text-[0.9rem]">Duracion sugerida</p>
+            <p class="m-0 mt-[0.4rem] text-slate-900 font-bold text-[1.8rem]">90 min</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Paginas a trabajar</p>
-            <p class="stat-value">4</p>
+          <article class="bg-white border border-slate-300 rounded-[0.9rem] shadow-[0_2px_8px_rgba(15,23,42,0.08)] p-4">
+            <p class="m-0 text-slate-500 text-[0.9rem]">Paginas a trabajar</p>
+            <p class="m-0 mt-[0.4rem] text-slate-900 font-bold text-[1.8rem]">4</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Utilidades esperadas</p>
-            <p class="stat-value">20+</p>
+          <article class="bg-white border border-slate-300 rounded-[0.9rem] shadow-[0_2px_8px_rgba(15,23,42,0.08)] p-4">
+            <p class="m-0 text-slate-500 text-[0.9rem]">Utilidades esperadas</p>
+            <p class="m-0 mt-[0.4rem] text-slate-900 font-bold text-[1.8rem]">20+</p>
           </article>
-          <article class="stat-card">
-            <p class="stat-label">Resultado</p>
-            <p class="stat-value">Deploy listo</p>
+          <article class="bg-white border border-slate-300 rounded-[0.9rem] shadow-[0_2px_8px_rgba(15,23,42,0.08)] p-4">
+            <p class="m-0 text-slate-500 text-[0.9rem]">Resultado</p>
+            <p class="m-0 mt-[0.4rem] text-slate-900 font-bold text-[1.8rem]">Deploy listo</p>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
-        <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+    <footer class="border-t border-slate-300 bg-white text-slate-600 py-4 text-[0.92rem]">
+      <div class="w-[92%] max-w-[1100px] mx-auto flex justify-between gap-2 flex-wrap">
+        <p class="m-0">Programacion II - Ejercitacion Tailwind CSS</p>
+        <p class="font-bold m-0">Desarrollado por Giuliano Gani</p>
       </div>
     </footer>
   </body>
